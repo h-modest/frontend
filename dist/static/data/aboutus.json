@@ -1,0 +1,141 @@
+{
+  "banner": {
+    "title": "about us",
+    "bg": "/static/images/aboutus/banner.png"
+  },
+  "navList": [
+    {
+      "title": "公司简介",
+      "id": "company-intro"
+    },
+    {
+      "title": "视频简介",
+      "id": "video-intro"
+    },
+    {
+      "title": "蚂蚁大事件",
+      "id": "ant-event"
+    }
+  ],
+  "companyModule": {
+    "cardText": "蚂蚁特工已为用户提供亿次以上AR互动，是众多一线知名品牌的共同选择",
+    "cardTitle": "亿",
+    "subTitle": "ar互动",
+    "moduleBg": "/static/images/aboutus/bg-01.png",
+    "case": [
+      {
+        "title": "支付宝ar年度",
+        "subTitle": "优秀案例",
+        "num": "60",
+        "unit": "%",
+        "name": "占有率"
+      },
+      {
+        "title": "AR",
+        "subTitle": "应用峰值",
+        "num": "81400",
+        "unit": "w",
+        "name": "参与人次"
+      }
+    ],
+    "market": {
+      "title": "领跑AR营销",
+      "content": "厦门蚂蚁特工网络科技有限公司坐落于厦门动漫软件基地，面向全国知名品牌，提供平台级的AR营销解决全案。目前，据支付宝AR年度优质案例官方公布数据统计，蚂蚁特工占有率高达60%，已开发的AR应用峰值亦突破了日1400w参与人次。"
+    },
+    "swiper": {
+      "vSwiper": true,
+      "height": 3,
+      "sHeight": 2.6,
+      "swiperArray": ["module_0", "module_1"],
+      "itemStyle": "",
+      "upSwiper": true,
+      "isPage": true,
+      "isPageBtn": false
+    },
+    "cooperation": [
+      [
+        "/static/images/aboutus/brand/brand_01.png",
+        "/static/images/aboutus/brand/brand_02.png",
+        "/static/images/aboutus/brand/brand_03.png",
+        "/static/images/aboutus/brand/brand_04.png",
+        "/static/images/aboutus/brand/brand_05.png",
+        "/static/images/aboutus/brand/brand_06.png",
+        "/static/images/aboutus/brand/brand_07.png",
+        "/static/images/aboutus/brand/brand_08.png"
+      ],
+      [
+        "/static/images/aboutus/brand/brand_01.png",
+        "/static/images/aboutus/brand/brand_02.png",
+        "/static/images/aboutus/brand/brand_03.png",
+        "/static/images/aboutus/brand/brand_04.png",
+        "/static/images/aboutus/brand/brand_05.png",
+        "/static/images/aboutus/brand/brand_06.png",
+        "/static/images/aboutus/brand/brand_07.png",
+        "/static/images/aboutus/brand/brand_08.png"
+      ]
+    ],
+    "praise": {
+      "title": "稳扎口碑积累",
+      "content": "蚂蚁特工凭借稳扎稳打的技术实力及强平台创新的运营能力，已为可口可乐、雪碧、美汁源、奥利奥、星巴克、雀巢、迪士尼、宝洁、施华蔻、威露士、立白、味全、统一、优酷、滴滴、脉动、香飘飘、天喔、百亚集团、龙湖、万达、印象城等品牌提供了AR技术支持。目前，基于SLAM、LBS、陀螺仪、图像追踪、人脸识别等前沿技术，为品牌传播、产品宣传、线下活动等场景提供了优质的AR数据营销服务，得到众多客户的一致认可；并通过多维互动，自主开创了营销权益落地与平台结合多种创新模式。"
+    }
+  },
+  "videoModule": {
+    "bg": "/static/images/home/video-bg.png",
+    "title": "蚂蚁特工AR---搞定营销有效果",
+    "enTitle": "Get marketing results",
+    "visible": false,
+    "src": "http://staticst.gxar.com/www/images/antopia/index/index-mp4.mp4"
+  },
+  "timeHistory": [
+    {
+      "year": "2018",
+      "month": "01~03月",
+      "text": "为国内多个一线品牌提供营销策划案及AR技术支持。"
+    },
+    {
+      "year": "2017",
+      "month": "12月",
+      "text": "获得近千万天使投资。"
+    },
+    {
+      "year": "2017",
+      "month": "10月",
+      "text": "自主研发中国首个AR营销平台（www.gxar.com）;"
+    },
+    {
+      "year": "2017",
+      "month": "5月",
+      "text": "荣获厦门虚拟与增强现实产业协会最具潜力奖;"
+    },
+    {
+      "year": "2017",
+      "month": "3月",
+      "text": "支付宝AR技术深度合作伙伴;"
+    },
+    {
+      "year": "2016",
+      "month": "12月",
+      "text": "蚂蚁金服金牌合作伙伴;"
+    },
+    {
+      "year": "2016",
+      "month": "10月",
+      "text": "口碑/飞猪全国首家接入虚拟现实产品技术;"
+    },
+    {
+      "year": "2016",
+      "month": "9月",
+      "text": "自主研发国内首个一键制作、快捷管理、多平台分发等功能于一体的“蚂蚁特工虚拟现实生成平台”;"
+    },
+    {
+      "year": "2016",
+      "month": "8月",
+      "text": "与蚂蚁金服、支付宝、大支付、口碑餐饮、泛行业、商超综合体、阿里影业、阿里旅行、飞猪、村淘等展开深入合作;"
+    },
+    {
+      "year": "2016",
+      "month": "5月",
+      "text": "蚂蚁特工正式成立;"
+    }
+  ]
+}

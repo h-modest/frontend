@@ -1,0 +1,203 @@
+{
+  "title": "首页",
+  "playIcon": "/static/images/home/play-icon-01.png",
+  "markIcon": "/static/images/home/mark.png",
+  "index": {
+    "num": "一",
+    "title": "ar营销解决方案",
+    "subTitle": "# 为用户打造一系列ar营销解决方案 #",
+    "moreText": "了解更多",
+    "videoBg": "/static/images/home/video-bg.png",
+    "swiper": {
+      "height": 4.5,
+      "sHeight": 4,
+      "bannerList": [
+        { "src": "/static/images/home/video-bg.png", "id": 0 },
+        { "src": "/static/images/home/video-bg-01.png", "id": 1 }
+      ],
+      "swiperArray": ["swiper_0", "swiper_1"],
+      "itemStyle": {
+        "background-size": "cover",
+        "background-position": "center"
+      },
+      "upSwiper": false,
+      "isPage": true,
+      "isPageBtn": false
+    },
+    "playText": "案例展示"
+  },
+  "advantage": {
+    "title": "AR强大优势",
+    "swiperBg": "/static/images/home/video-bg-01.png",
+    "swiper": {
+      "height": 5,
+      "sHeight": 4.5,
+      "swiperArray": ["module_0", "module_1", "module_2"],
+      "itemStyle": "",
+      "upSwiper": true,
+      "isPage": true,
+      "isPageBtn": true,
+      "isFade": true
+    },
+    "list": [
+      "通过在真实的空间里，叠加虚拟景象（AR技术），让真实世界更有乐趣与生动。",
+      "运用强大的AR技术，整合互联网大数据分析，打造更懂品牌的营销模式。",
+      "用AR打通营销门槛，升级消费者参与兴趣，实现移动互联网用户互动新体验。"
+    ]
+  },
+  "service": {
+    "title": "产品服务",
+    "swiperBg": "/static/images/home/module-bg-02.png",
+    "swiper": {
+      "height": 5,
+      "sHeight": 4.5,
+      "swiperArray": ["module_0", "module_1", "module_2"],
+      "itemStyle": "",
+      "upSwiper": true,
+      "isPage": true,
+      "isPageBtn": true,
+      "isFade": true
+    },
+    "list": [
+      "依托AR强大营销属性与大数据，为国内大品牌场景化营销提供行之有效的创新营销方案。",
+      "通过蚂蚁特工国内首个自主研发AR平台，借助国内一线各大平台，真正实现互联网与AR数字化的品牌运营。",
+      "基于支付宝AR平台，覆盖5亿+中国支付宝实名活跃用户，真正渗透用户参与门槛，打通移动互联网营销渠道。"
+    ]
+  },
+  "scene": {
+    "title": "共享AR应用场景",
+    "intro": "V蚂蚁特工AR旗下专注AR技术开发与AR内容生产的大数据营销平台，赋能品牌传播、产品宣传、线下活动等活动场景，用AR创新营销解决",
+    "list": [
+      {
+        "name": "水饮-ar",
+        "logo": "/static/images/home/scene/scene-01.png"
+      },
+      {
+        "name": "日用-ar",
+        "logo": "/static/images/home/scene/scene-02.png"
+      },
+      {
+        "name": "洗护-ar",
+        "logo": "/static/images/home/scene/scene-03.png"
+      },
+      {
+        "name": "零食-ar",
+        "logo": "/static/images/home/scene/scene-04.png"
+      }
+    ],
+    "more": {
+      "title": "了解更多",
+      "url": "#"
+    }
+  },
+  "team": {
+    "title": "我们的优势",
+    "slide": {
+      "height": 7,
+      "sHeight": 6.5,
+      "swiperArray": ["slide_0", "slide_1", "slide_2"],
+      "itemStyle": "",
+      "upSwiper": false,
+      "isPage": true,
+      "isPageBtn": false
+    },
+    "list": [
+      {
+        "title": "引流导量",
+        "logo": "/static/images/home/team-01.png",
+        "intro": "单品牌用户参与人数突破1000w/日，国内唯一同时获得首家“蚂蚁金服金牌合作伙伴”及“支付宝AR技术战略合作方”荣誉称号。"
+      },
+      {
+        "title": "综合实力",
+        "logo": "/static/images/home/team-02.png",
+        "intro": "通过多维场景化营销，年复购率达20%上。同时，结合当下新潮IP形象，打造指数级营业额增长。"
+      },
+      {
+        "title": "首创模式",
+        "logo": "/static/images/home/team-03.png",
+        "intro": "线下渠道销售，线上AR营销体验。结合AI大数据，通过多维度用户沉淀，双线实现营销闭环。"
+      }
+    ]
+  },
+  "partner": {
+    "title": "合作伙伴",
+    "isOpen": false,
+    "list": [
+      {
+        "name": "可乐",
+        "logo": "/static/images/home/brand/brand_01.png"
+      },
+      {
+        "name": "雪碧",
+        "logo": "/static/images/home/brand/brand_02.png"
+      },
+      {
+        "name": "美滋源",
+        "logo": "/static/images/home/brand/brand_03.png"
+      },
+      {
+        "name": "星巴克",
+        "logo": "/static/images/home/brand/brand_04.png"
+      },
+      {
+        "name": "奥利奥",
+        "logo": "/static/images/home/brand/brand_05.png"
+      },
+      {
+        "name": "R&G",
+        "logo": "/static/images/home/brand/brand_06.png"
+      },
+      {
+        "name": "雀巢",
+        "logo": "/static/images/home/brand/brand_07.png"
+      },
+      {
+        "name": "味全",
+        "logo": "/static/images/home/brand/brand_08.png"
+      },
+      {
+        "name": "迪士尼",
+        "logo": "/static/images/home/brand/brand_09.png"
+      },
+      {
+        "name": "迪士尼",
+        "logo": "/static/images/home/brand/brand_09.png"
+      }
+    ],
+    "more": {
+      "name": "展开所有"
+    }
+  },
+  "contact": {
+    "contactBg": "/static/images/home/module-bg-01.png",
+    "title": "联系我们",
+    "form": [
+      {
+        "name": "company",
+        "placeholder": "企业名称",
+        "validate": "required",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "name": "mobile",
+        "placeholder": "联系方式",
+        "validate": "required|mobile",
+        "type": "tel",
+        "value": ""
+      },
+      {
+        "name": "email",
+        "placeholder": "电子邮箱",
+        "validate": "required|email",
+        "type": "text",
+        "value": ""
+      }
+    ],
+    "comInfo": ["邮箱：xmmytg@126.com", "联系方式：400-8868163（林经理）", "地址：福建省厦门市软件园二期望海路57号之二4"],
+    "footnote": "共享AR：蚂蚁特工旗下专注于AR技术开发与AR内容生产的大数据营销平台"
+  }
+
+
+
+}

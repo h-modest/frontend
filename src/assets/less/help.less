@@ -1,0 +1,218 @@
+@import "common.less";
+@import "public.less";
+.help {
+    text-align: center;
+    .help_row {
+        margin-top: .39rem;
+        width: 6.76rem;
+        display: inline-block;
+        .help_list {
+            display: flex;
+            height: auto;
+            width: 100%;
+            .message{
+                width: 100%;
+                .succ {
+                    width: 100%;
+                    height: 3.93rem;
+                    float: left;
+                    background: white;
+                    text-align: center;
+                    .i-succ{
+                        width: 100%;
+                        height: 1.97rem;
+                        float: left;
+                        background:url(../../../static/images/help/succ.png) no-repeat center;
+                    }
+                    .succ-text {
+                        width: 100%;
+                        float: left;
+                    }
+                    
+                }
+                .me{
+                     width: 100%;
+                .message-row {
+                    float: left;
+                    width: 100%;
+                    background: white;
+                    position: relative;
+                    .message-text {
+                        width: 100%;
+                        height: 2.5rem;
+                        border: none;
+                         .box-size;
+                        padding: .1rem;
+                        outline:none;
+                        resize:none;
+                    }
+                    .message-add {
+                        width: 1.27rem;
+                        position: absolute;
+                        height: .23rem;
+                        font-size: .2rem;
+                        color: #989898;
+                        bottom: .2rem;
+                        right:.17rem;
+                    }
+                     }
+                }
+                .number_test {
+                    width: 100%;
+                    height: 1.09rem;
+                    line-height: 1.09rem;
+                    .box-size;
+                    text-align: left;
+                    padding-left: .36rem;
+                    background: white;
+                    outline:none;
+                    border: none;
+                    float: left;
+                    margin-top: .2rem;
+                    
+                }
+                .btn {
+                    width:2.62rem;
+                    height: .62rem;
+                    margin: .2rem auto;
+                    line-height: .62rem;
+                    text-align: center;
+                    font-size: .24rem;
+                    color: white;
+                    .gradual;
+                    .gradual-shadow;
+                    border-radius:30px ;
+                    outline:none;
+                    border: none;
+                }
+           }
+            ul {
+                width: 100%;
+                height: 100%;
+                list-style: none;
+                li {
+                    font-size: .24rem;
+                    height: 1.12rem;
+                    background: white;
+                    transition: ease 0.3s all 0s;
+                    width: 100%;
+                    margin-bottom: .2rem;
+                    .border-radius-10;
+                    overflow: hidden;
+                    &.business {
+                        height: 1.63rem;
+                        line-height: 1.63rem;
+                        .business-icon {
+                            width: 1.87rem;
+                            height: 100%;
+                            float: left;
+                            border-right: 1px dashed #e4e4e4;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                        }
+                        .business-text {
+                            .box-size;
+                            padding-left: .35rem;
+                            text-align: left;
+                            font-weight: bold;
+                            width: 4.36rem;
+                            float: left;
+                        }
+                    }
+                    &.coupleBack {
+                        height: 1.09rem;
+                        line-height: 1.09rem;
+                        padding-left: .4rem;
+                        .box-size;
+                        text-align: left;
+                        font-weight: bold;
+                        position: relative;
+                        .i-right {
+                            width: .14rem;
+                            height: .24rem;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            position: absolute;
+                            right: .43rem;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                    .help_contion {
+                        height: 100%;
+                        line-height: 1.12rem;
+                        width: 100%;
+                        float: left;
+                        .box-size;
+                        padding-left: 1.09rem;
+                        position: relative;
+                        position: relative;
+                        .help-number {
+                            width: 1.09rem;
+                            height: 100%;
+                            border-right: 1px solid #f2f2f2;
+                            font-size: .4rem;
+                            color: #d9d9d9;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            &.action {
+                                color: #fda085;
+                            }
+                        }
+                        .help-title {
+                            width: 4.9rem;
+                            .box-size;
+                            padding-left: .35rem;
+                            text-align: left;
+                            font-weight: bold;
+                            color: black;
+                            float: left;
+                            .help-title-top {
+                                width: 100%;
+                                height: 1.12rem;
+                                float: left;
+                            }
+                            .help-title-bottom {
+                                width: 100%;
+                                padding-bottom: .36rem;
+                                font-size: .2rem;
+                                line-height: .35rem;
+                                float: left;
+                            }
+                            .icon-ca {
+                                width: .33rem;
+                                height: .33rem;
+                                position: absolute;
+                                top: .42rem;
+                                right: .42rem;
+                                transition: ease 0.3s all 0s;
+                                background: url(../../../static/images/help/icon-ca.png) no-repeat center;
+                                background-size: contain;
+                                &.action {
+                                    transform-origin: center;
+                                    transform: rotateZ(45deg);
+                                }
+                            }
+                        }
+                    }
+                    &.action {
+                        height: auto;
+                    }
+                    &:last-child {
+
+                        .help-title {
+                            line-height: .35rem;
+                            padding-top: .3rem;
+                        }
+                        .business-text {
+                            line-height: .35rem;
+                            padding-top: .5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

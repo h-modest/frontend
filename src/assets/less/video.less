@@ -1,0 +1,71 @@
+/* video.js 样式覆盖 */
+@import "common.less";
+@import "public.less";
+
+.vjs_video_3-dimensions {
+  width: 100vw;
+}
+//
+// .video-js .vjs-control-bar {
+//   height: 100% !important;
+// }
+//
+// .video-js .vjs-control {
+//   display: none;
+//   align-items: center;
+//   justify-content: center;
+//   width: 100%;
+// }
+// .video-js .vjs-control.vjs-playing,
+// .video-js .vjs-control.vjs-paused {
+//   display: flex;
+// }
+//
+// .vjs-button > .vjs-icon-placeholder:before {
+//   position: inherit;
+//   font-size: 1rem;
+// }
+//
+.video-js .vjs-big-play-button {
+  .video-btn-bg;
+  .position-center;
+  .vjs-icon-placeholder::before {
+     content: '';
+     .video-btn-icon;
+  }
+}
+//
+// .video-js .vjs-control.vjs-paused,
+// .video-js .vjs-control.vjs-playing {
+//   &::after {
+//     content: '';
+//     .video-btn-icon;
+//     height: .5rem;
+//     width: .5rem;
+//   }
+//  .vjs-icon-placeholder {
+//     .video-btn-bg;
+//     .position-center;
+//  }
+// }
+//
+// .video-js .vjs-control.vjs-playing {
+//   &::after {
+//     content: '\F103';
+//     left: 50.1%;
+//     font-family: VideoJS;
+//     font-weight: normal;
+//     font-style: normal;
+//     font-size: .7rem;
+//     background-image: none;
+//     margin-left: 0;
+//     background-size: 0;
+//     height: auto;
+//     width: auto;
+//     text-align: right;
+//   }
+// }
+//
+// .vjs-poster {
+//   background-size: cover;
+// }

@@ -1,0 +1,309 @@
+@import "common.less";
+@import "public.less";
+
+.aboutus {
+  .about-container {
+    position: relative;
+    .about-nav {
+      position: absolute;
+      top: -2rem;
+      width: 50vw;
+      .gradual;
+      .box-shadow;
+      border-top-right-radius: .1rem;
+      border-bottom-right-radius: .1rem;
+      z-index: @z-index-1;
+      color: @white;
+      ul {
+        li {
+          padding: .4rem 10vw;
+          border-bottom: 1px dashed @white;
+          position: relative;
+          font-size: @font-m;
+          &:last-child {
+            border-bottom: none;
+          }
+          .icon-dir {
+            float: right;
+            position: absolute;
+            top: 50%;
+            right: 10vw;
+            transform: translateY(-50%) rotate(45deg);
+          }
+        }
+      }
+    }
+    .about-module {
+      padding: 0 4vw;
+      &.company-module {
+        margin-bottom: -3.8rem;
+      }
+      &.event-module {
+        text-align: right;
+        position: relative;
+        top: -.5rem;
+        width: 100vw;
+        padding: 0;
+        margin-bottom: -.5rem;
+        .title {
+          display: inline-block;
+          background: @white;
+          width: 30vw;
+          padding: .55rem 4vw .55rem 6vw;
+          border-top-left-radius: .1rem;
+          border-bottom-left-radius: .1rem;
+          &::after {
+            right: 4vw;
+            bottom: .3rem;
+          }
+        }
+        .ar-time-axis .time-axis-content .detail {
+          text-align: left;
+        }
+      }
+      .title {
+        padding: .4rem 0;
+        font-size: @font-ml;
+        text-align: right;
+        font-weight: bold;
+        position: relative;
+        &.left-title {
+          text-align: left;
+          &::after {
+            right: auto;
+            left: 0;
+          }
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: .15rem;
+          right: 0;
+          display: block;
+          height: .06rem;
+          width: .6rem;
+          background: @main-color;
+        }
+      }
+      .about-data {
+        position: relative;
+        padding: .8rem 0 .2rem;
+        .about-card {
+          position: absolute;
+          top: .2rem;
+          right: -4vw;
+          padding: 1rem 6vw;
+          width: 56vw;
+          background: @white;
+          font-size: @font-s;
+          border-top-left-radius: .1rem;
+          border-bottom-left-radius: .1rem;
+          z-index: @z-index-0;
+        }
+        .data-title {
+          font-size: @font-ll;
+          font-weight: bold;
+          position: relative;
+          border-bottom: 1px solid @nav-border-color;
+          .ar-plus {
+            position: absolute;
+            left: 1.2rem;
+            bottom: .5rem;
+            transform: scale(.8);
+          }
+        }
+        .data-sub-title {
+          padding: .1rem 0;
+          font-size: @font-ss;
+          color: @infinite-color;
+        }
+        .data-bg {
+          position: relative;
+          left: -4vw;
+          width: 100vw;
+          height: 3.4rem;
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        .data {
+          position: relative;
+          top: -.6rem;
+          text-align: center;
+          z-index: @z-index-1;
+          ul {
+            display: inline-block;
+            border-radius: .15rem;
+            .gradual;
+            .box-shadow;
+            color: @white;
+            li {
+              float: left;
+              padding: .3rem .2rem;
+              .data-case-title {
+                width: 30vw;
+                padding: .1rem 0;
+                background: @white;
+                border-radius: .15rem;
+                font-size: @font-s;
+                color: @main-color;
+                p:last-child {
+                  margin-top: .02rem;
+                }
+              }
+              .data-case-num {
+                margin-top: .2rem;
+                margin-bottom: .6rem;
+                position: relative;
+                .data-num {
+                  font-size: @font-mll;
+                }
+                .data-unit {
+                  font-size: @font-ss;
+                }
+                &::after {
+                  content: '';
+                  position: absolute;
+                  bottom: -.5rem;
+                  left: 50%;
+                  display: block;
+                  width: 1px;
+                  height: .45rem;
+                  background: @white;
+                  transform: rotate(10deg) translateX(-50%);
+                }
+              }
+              .data-name {
+                font-size: @font-ss;
+              }
+            }
+          }
+        }
+      }
+      .about-market {
+        position: relative;
+        top: -1.5rem;
+        left: -4vw;
+        background: @white;
+        padding: 1rem 4vw .8rem;
+        width: 88vw;
+        border-top-right-radius: .1rem;
+        border-bottom-right-radius: .1rem;
+        z-index: @z-index-0;
+        .about-market-title {
+          font-size: @font-s;
+          color: @main-color;
+          margin-bottom: .1rem;
+        }
+        .about-market-content {
+          font-size: @font-ss;
+          text-indent: .4rem;
+        }
+      }
+      .about-swiper {
+        position: relative;
+        top: -2.2rem;
+        left: -4vw;
+        width: 100vw;
+        padding: .4rem 0 2rem;
+        .gradual;
+        .swiper-tab {
+          position: relative;
+          .gradual;
+          padding: .3rem 4vw;
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 4vw;
+            display: block;
+            width: 92vw;
+            height: 1px;
+            border-bottom: 1px dashed @white;
+          }
+          li {
+            display: inline-block;
+            padding: .2rem 2vw;
+            width: 18vw;
+            text-align: center;
+            .brand-img {
+              height: .5rem;
+              max-width: 100%;
+            }
+          }
+        }
+        .ar-swiper .custom-pagination .swiper-pagination-bullet {
+          background: rgba(255,255,255,.3);
+          &.swiper-pagination-bullet-active {
+            background: @white;
+          }
+        }
+      }
+      .about-praise {
+        position: relative;
+        top: -4rem;
+        width: 86vw;
+        background: @white;
+        padding: .8rem 4vw .8rem 6vw;
+        border-top-left-radius: .1rem;
+        border-bottom-left-radius: .1rem;
+        .about-praise-title {
+          color: @main-color;
+          font-size: @font-s;
+          margin-bottom: .25rem;
+        }
+        .about-praise-content {
+          text-indent: .5rem;
+          font-size: @font-ss;
+        }
+      }
+      .video-module {
+        position: relative;
+        left: -4vw;
+        width: 100vw;
+        height: 5rem;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .flex-center;
+        flex-direction: column;
+        color: @white;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 100vw;
+          height: 5rem;
+          background: rgba(0, 0, 0, 0.3);
+        }
+        .video-title {
+          font-size: @font-m;
+          margin: .15rem 0;
+          z-index: @z-index-0;
+          &::before {
+            content: '';
+            display: block;
+            margin: 0 auto;
+            width: .7rem;
+            height: .06rem;
+            background: @white;
+            margin-bottom: .3rem;
+          }
+        }
+        .entitle {
+          font-size: @font-sss;
+          opacity: .5;
+          margin-bottom: .3rem;
+          z-index: @z-index-0;
+        }
+        .video-btn-icon {
+          height: .5rem;
+          width: .5rem;
+          z-index: @z-index-0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,214 @@
+/* 公共组件样式 */
+@import "common.less";
+
+// 按钮的阴影
+.box-shadow {
+  box-shadow: 0px 20px 70px -12px #fbbdab;
+}
+
+// 渐变色
+.gradual {
+  background: -webkit-linear-gradient(88deg, #f6d365 -20%, #FDA084 40%);
+  background: -o-linear-gradient(88deg, #f6d365 -20%, #FDA084 40%);
+  background: -mos-linear-gradient(88deg, #f6d365 -20%, #FDA084 40%);
+  background: -moz-linear-gradient(88deg, #f6d365 -20%, #FDA084 40%);
+  background: linear-gradient(88deg, #f6d365 -20%, #FDA084 40%);
+}
+
+// 白底阴影
+.bg-shadow {
+  box-shadow: 0px 65px 120px -20px rgba(0,0,0,.06);
+}
+
+.box-size {
+    box-sizing: border-box;
+}
+
+.border-radius-10 {border-radius:.1rem;}
+//渐变色阴影
+
+.gradual-shadow{box-shadow: 0px .21rem .3168rem .0032px rgba(253, 160, 133, 0.24);}
+
+.flex {
+  display: flex;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.not-allowed {
+  cursor: not-allowed;
+}
+
+.flex-center {
+  .flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes circle-opacity {
+  0% {
+    opacity: 0;
+    transform: scale(.8);
+  }
+  50% {
+    opacity: .2;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(.8);
+  }
+}
+
+@keyframes circle-opacity-side {
+  0% {
+    opacity: 0;
+    transform: scale(.6);
+  }
+  50% {
+    opacity: .1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(.6);
+  }
+}
+
+.video-btn-bg {
+  position: relative;
+  background: transparent;
+  border: none;
+  font-size: .7rem;
+  text-align: center;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  line-height: .8rem;
+  .gradual;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -.15rem;
+    left: -.15rem;
+    display: block;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    .gradual;
+    animation: circle-opacity 3s infinite;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: -.3rem;
+    left: -.3rem;
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    .gradual;
+    animation: circle-opacity-side 3s infinite;
+  }
+}
+
+.video-btn-icon {
+  .position-center;
+  background-image: url('./../../../static/images/home/play-icon.png');
+  background-size: .5rem .5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: .04rem;
+}
+
+//方向箭头
+.icon-dir {
+  display: inline-block;
+  height: .22rem;
+  width: .22rem;
+  border-top: 2px solid @white;
+  border-right: 2px solid @white;
+  border-radius: 2px;
+  &.icon-right {
+    transform: rotate(45deg);
+  }
+  &.icon-left {
+    transform: rotate(-135deg);
+  }
+  &.icon-top {
+    transform: rotate(-45deg);
+  }
+  &.icon-bottom {
+    transform: rotate(135deg);
+  }
+}
+
+// 按钮样式
+.ar-btn {
+  display: inline-block;
+  width: 3rem;
+  height: .8rem;
+  border-radius: .8rem;
+  line-height: .8rem;
+  text-align: center;
+  border: 1px solid transparent;
+  .pointer;
+  &:active {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+  }
+  .btn-disable {
+    background: @disabled-btn-bg;
+    border-color: @disabled-btn-bg;
+    color: @white;
+    .not-allowed;
+  }
+  &.btn-default {
+    background: @white;
+    color: @default-btn-color;
+    border-color: @default-btn-color;
+    &[disabled=disabled] {
+      .btn-disable;
+    }
+  }
+  &.btn-primary {
+    .gradual;
+    .box-shadow;
+    color: @white;
+    &[disabled=disabled] {
+      .btn-disable;
+    }
+  }
+  &.btn-circle {
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 50%;
+    line-height: 1.1rem;
+    border: none;
+  }
+}
+
+// 文字图片对其
+.al-md {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+// modal-shadow
+.modal-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,.66);
+}

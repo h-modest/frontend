@@ -1,0 +1,60 @@
+@import "common.less";
+@import "public.less";
+.case_title {
+    height: 1.53rem;
+    display: inline-block;
+    margin-top: -1.13rem;
+    background: white;
+    position: relative;
+    padding: 0.16rem 0;
+    border-radius: 0.1rem;
+    box-sizing: @box-size;
+    ul {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        li {
+            width: 1.66rem;
+            height: 100%;
+            float: left;
+            padding-top: .2rem;
+            border-right: 1px solid #f2f2f2;
+            box-sizing: @box-size;
+            &:last-child {
+                border-right: 0;
+            }
+            &.action {
+                border-right: 0;
+            }
+            .icon-Url {
+                width: 100%;
+                height: .41rem;
+                float: left;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .cases-text {
+                color: #999999;
+                font-size: .2rem;
+                width: 100%;
+                margin-top: .1rem;
+                float: left;
+                &.action {
+                    color: white;
+                }
+            }
+        }
+    }
+    .new-mode {
+        width: 1.72rem;
+        height: 100%;
+        .gradual;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 0.1rem;
+        transition: ease 0.3s all 0s;
+        box-shadow: 0px .21rem .3168rem .0032px rgba(253, 160, 133, 0.24)
+    }
+}

@@ -1,0 +1,152 @@
+/* 全局类 */
+@import "common.less";
+@import "public.less";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face{
+  font-family: 'PFM';
+  src : url('/static/fonts/PingFang_Medium.ttf') format('truetype');
+}
+
+body {
+  font-size: .3rem;
+  background-color: @body-bg;
+  font-family: 'PFM';
+  &.fixed {
+    overflow: hidden;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: @font-color;
+  text-decoration: none;
+}
+
+// 移除点击之后出现的阴影
+a, div, img, button {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+input {
+  border: none;
+  border: 1px solid @input-border-color;
+  border-radius: .05rem;
+  &:focus {
+    outline: none;
+  }
+  &::-webkit-input-placeholder {
+    color: @input-border-color;
+  }
+  &:-moz-placeholder {
+    color: @input-border-color;
+  }
+  &::-moz-placeholder {
+    color: @input-border-color;
+  }
+  &:-ms-input-placeholder {
+    color: @input-border-color;
+  }
+}
+
+.container {
+  padding-top: 1.5rem;
+}
+
+footer {
+  height: .8rem;
+  background-color: @body-bg;
+  padding: .3rem 4vw;
+  text-align: center;
+  font-size: @font-s;
+  color: @footer-color;
+  border-top: 1px dashed @input-border-color;
+}
+
+.clearfix {
+  clear: both;
+}
+
+// 过渡动画
+.slide-right-enter-active,
+.slide-right-leave-active,
+.slide-left-enter-active,
+.slide-left-leave-active {
+  will-change: transform;
+  transition: all .3s;
+  position: absolute;
+  width:100%;
+  left:0;
+}
+.slide-right-enter {
+  transform: translateX(-100%);
+}
+.slide-right-leave-active {
+  transform: translateX(100%);
+}
+.slide-left-enter {
+  transform: translateX(100%);
+}
+.slide-left-leave-active {
+  transform: translateX(-100%);
+}
+
+/* 全局图标 */
+// 加号
+.ar-plus {
+  display: inline-block;
+  position: relative;
+  &.plus-primary {
+    &::after, &::before {
+      background: @main-color;
+    }
+  }
+  &::after, &::before {
+    content: '';
+    .position-center;
+    display: inline-block;
+    height: .05rem;
+    width: .4rem;
+    border-radius: .05rem;
+    background-color: @nav-border-color;
+  }
+  &::after {
+    height: .4rem;
+    width: .05rem;
+    border-radius: .05rem;
+  }
+}
+
+// 减号
+.ar-minus {
+  .ar-plus;
+  &::after {
+    height: 0;
+  }
+}
+
+// 圆角加号
+.ar-circle-plus {
+  display: inline-block;
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  background: @white;
+  position: relative;
+  .ar-plus;
+  &.primary {
+    .gradual;
+    .box-shadow;
+    &::after, &::before {
+      background-color: @white;
+    }
+  }
+}
